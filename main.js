@@ -206,19 +206,16 @@ function changeLevel(elBtn) {
       gLevel.SIZE = 4;
       gLevel.MINES = 2;
       gameLives=1;
-      document.querySelector('.board').style.fontSize='22px';
       break;
     case 'Hard':
       gLevel.SIZE = 8;
       gLevel.MINES = 12;
       gameLives=2;
-      document.querySelector('.board').style.fontSize='20px';
       break;
     case 'Extreme':
       gLevel.SIZE = 12;
       gLevel.MINES = 30;
       gameLives=3;
-      document.querySelector('.board').style.fontSize='15px';
   }
   initGame()
 }

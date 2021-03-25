@@ -9,7 +9,7 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  zoom: 80%;
+  zoom: 65%;
   background-image: url("background-01.svg");
   font-family:  'Passion One', cursive;
   background-repeat: no-repeat;
@@ -23,9 +23,11 @@ body {
 margin: auto ;
 align-self: center;
 vertical-align: bottom;
-height: 730px;
-width:730px
+height: 740px;
+width:740px;
+
 }
+
 
 
 .board td,th {
@@ -38,7 +40,9 @@ width:730px
   outline:none;
   background-repeat: no-repeat;
   font-size: 22px;
-  zoom:120%;
+  zoom:150%;
+  padding: 0;
+  margin: 0;
 }
 .board td:focus{
   border:none;
@@ -56,7 +60,7 @@ font-size: 50px;
 }
 
 button{
-color: #2c1410;
+color:#f8da51;
 outline:none;
 background: url("buttonlevelnew-01.svg");
 zoom: 60%;
@@ -98,7 +102,15 @@ padding-left: 20px;
 
 .smile{
 font-size: 60px;
+zoom: 150%;
+padding:0;
+margin:0;
+padding-bottom: 20px;
 }
+
+
+
+
 
 
 .timer{
@@ -137,3 +149,11 @@ font-size: 60px;
   border: 30px;
 
 }
+
+.titel{
+width: 450px;
+display:block;
+margin: auto;
+padding-top: 30px;
+}
+
