@@ -133,7 +133,11 @@ function cellClicked(event, i, j) {
   }
   if (event.button === 0) {
     gBoard[i][j].isShown = true;
-    if (!gBoard[i][j].isMine) gGame.shownCount++
+    if (!gBoard[i][j].isMine) {
+      gGame.shownCount++
+      var gDefuse = gLevel.MINES - gGame.markedCount-gameLives+lives;
+      document.querySelector('h4 span').innerText = (gDefuse > 0) ? gDefuse : 0;
+    }
     if(gBoard[i][j].minesAroundCount===0){
       openAllNeighbors(i, j,  gBoard,event)
     }
@@ -147,7 +151,7 @@ function cellClicked(event, i, j) {
       gGame.markedCount++
     }
     console.log(gGame)
-    var gDefuse = gLevel.MINES - gGame.markedCount;
+    gDefuse = gLevel.MINES - gGame.markedCount;
     document.querySelector('h4 span').innerText = (gDefuse > 0) ? gDefuse : 0;
   }
   checkGameOver(gBoard,i,j)
@@ -179,7 +183,7 @@ function checkGameOver(board,i,j) {
     document.querySelector('.smile').innerText = '😭'
     clearInterval(intervalTimer);
   }
-  if (gGame.markedCount === gLevel.MINES && gGame.shownCount === emptyCellsNum) {
+  if (gGame.markedCount === gLevel.MINES-gameLives+lives && gGame.shownCount === emptyCellsNum) {
     console.log("you win")
     gGame.isOn = false;
     document.querySelector('.smile').innerText = '🤗'
