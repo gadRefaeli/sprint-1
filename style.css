@@ -151,9 +151,10 @@ padding-bottom: 20px;
 }
 
 .titel{
-width: 450px;
+width: 30%;
 display:block;
 margin: auto;
 padding-top: 30px;
+background-repeat: no-repeat;
 }
 
