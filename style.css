@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+
+body {
+
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  zoom: 60%;
+  background-image: url("background-01.svg");
+  font-family:  'Passion One', cursive;
+  background-repeat: no-repeat;
+  background-size: cover;
+  outline:none;
+}
+
+
+.board{
+  border:none;
+margin: auto ;
+align-self: center;
+vertical-align: bottom;
+height: 730px;
+width:730px
+}
+
+
+.board td,th {
+  border:none;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-image: url("cell-01.svg");
+  outline:none;
+  background-repeat: no-repeat;
+  font-size: 22px;
+  zoom:120%;
+}
+.board td:focus{
+  border:none;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-image: url("cell-01_open.svg");
+  outline:none;
+}
+
+.timer{
+font-size: 50px;
+
+}
+
+button{
+color: #2c1410;
+outline:none;
+background: url("buttonlevelnew-01.svg");
+zoom: 60%;
+font-family:'Passion One', cursive;
+font-size: 60px;
+border: 30px;
+height: 120px;
+width:350px
+
+}
+
+button:focus {
+ 
+  transform: translateY(4px);
+}
+
+button:hover {
+ 
+  transform: translateY(4px);
+}
+
+
+
+
+h3{
+font-size: 30px;
+  color:#2c1410;
+padding: -50px;
+padding-left: 20px;
+}
+
+
+h4{
+  font-size: 30px;
+  color:#2c1410;
+padding: -50px;
+padding-left: 20px;
+}
+
+.smile{
+font-size: 60px;
+}
+
+
+.timer{
+
+  color: #2c1410;
+  outline:none;
+  background: url("CLOCK-01.svg");
+  background-repeat: no-repeat;
+  zoom: 70%;
+  font-family:'Passion One', cursive;
+  font-size: 60px;
+  border: 30px;
+}
+
+.booms{
+
+  color: #2c1410;
+  outline:none;
+  background: url("boom-01.svg");
+  background-repeat: no-repeat;
+  zoom: 70%;
+  font-family:'Passion One', cursive; 
+  font-size: 60px;
+  border: 30px;
+
+}
+
+.lives{
+  color: #2c1410;
+  outline:none;
+  background: url("live-01.svg");
+  background-repeat: no-repeat;
+  zoom: 70%;
+  font-family:'Passion One', cursive;
+  font-size: 40px;
+  border: 30px;
+
+}
